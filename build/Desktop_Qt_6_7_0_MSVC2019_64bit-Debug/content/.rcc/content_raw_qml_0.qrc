@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/content/">
+    <file alias="MainScreen.ui.qml">C:/Users/Esteban/Documents/QtProjects/Meteo4/content/MainScreen.ui.qml</file>
+    <file alias="fonts/fonts.txt">C:/Users/Esteban/Documents/QtProjects/Meteo4/content/fonts/fonts.txt</file>
+  </qresource>
+</RCC>
+

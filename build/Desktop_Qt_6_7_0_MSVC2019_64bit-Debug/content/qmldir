@@ -1,0 +1,33 @@
+module content
+linktarget contentLibplugin
+optional plugin contentLibplugin
+classname contentPlugin
+typeinfo contentLib.qmltypes
+prefer :/content/
+MainScreen 1.0 MainScreen.ui.qml
+LocationPinDelegate 1.0 delegates/LocationPinDelegate.qml
+LocationPinDelegateForm 1.0 delegates/LocationPinDelegateForm.ui.qml
+RecentViewDelegate 1.0 delegates/RecentViewDelegate.qml
+RecentViewDelegateForm 1.0 delegates/RecentViewDelegateForm.ui.qml
+WeekDaysViewDelegate 1.0 delegates/WeekDaysViewDelegate.ui.qml
+PointsListModel 1.0 models/PointsListModel.qml
+RecentsViewModel 1.0 models/RecentsViewModel.qml
+WeekDaysViewModel 1.0 models/WeekDaysViewModel.qml
+CurrentTemperatureView 1.0 views/CurrentTemperatureView.qml
+CurrentTemperatureViewForm 1.0 views/CurrentTemperatureViewForm.ui.qml
+DetailsPanel 1.0 views/DetailsPanel.qml
+DetailsPanelForm 1.0 views/DetailsPanelForm.ui.qml
+HighLowView 1.0 views/HighLowView.qml
+HighLowViewForm 1.0 views/HighLowViewForm.ui.qml
+LocationNameView 1.0 views/LocationNameView.qml
+LocationNameViewForm 1.0 views/LocationNameViewForm.ui.qml
+MapView 1.0 views/MapView.qml
+MapViewForm 1.0 views/MapViewForm.ui.qml
+RecentsView 1.0 views/RecentsView.qml
+RecentsViewForm 1.0 views/RecentsViewForm.ui.qml
+SeeAllView 1.0 views/SeeAllView.qml
+SeeAllViewForm 1.0 views/SeeAllViewForm.ui.qml
+StatusView 1.0 views/StatusView.qml
+StatusViewForm 1.0 views/StatusViewForm.ui.qml
+WeekDaysView 1.0 views/WeekDaysView.ui.qml
+

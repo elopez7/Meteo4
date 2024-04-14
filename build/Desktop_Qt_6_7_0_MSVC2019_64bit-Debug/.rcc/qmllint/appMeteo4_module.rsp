@@ -1,0 +1,10 @@
+-I
+C:/Users/Esteban/Documents/QtProjects/Meteo4/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug
+-I
+C:/Qt/6.7.0/msvc2019_64/./qml
+--resource
+C:/Users/Esteban/Documents/QtProjects/Meteo4/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/.rcc/qmake_Meteo4.qrc
+--resource
+C:/Users/Esteban/Documents/QtProjects/Meteo4/build/Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/.rcc/appMeteo4_raw_qml_0.qrc
+--module
+Meteo4
