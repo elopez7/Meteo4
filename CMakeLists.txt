@@ -4,7 +4,7 @@ project(Meteo4 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Quick)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Quick QuickControls2)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -33,7 +33,7 @@ set_target_properties(appMeteo4 PROPERTIES
 )
 
 target_link_libraries(appMeteo4
-    PRIVATE Qt6::Quick contentLibplugin
+    PRIVATE Qt6::Quick Qt6::QuickControls2 contentLibplugin
 )
 
 include(GNUInstallDirs)
