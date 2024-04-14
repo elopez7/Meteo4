@@ -20,9 +20,8 @@ Item{
     id: root
     Image {
         id: background
-        anchors.fill: parent
+        anchors.fill: root
         source: "images/backgrounds/02n.png"
-        fillMode: Image.PreserveAspectFit
 
         Plugin {
             id: mapPlugin
