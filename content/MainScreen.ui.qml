@@ -16,12 +16,13 @@ import Meteo4
 import "views"
 import "models"
 
+
 Item{
     id: root
     Image {
         id: background
         anchors.fill: root
-        source: "images/backgrounds/02n.png"
+        source: "images/backgrounds/03d.png"
 
         Plugin {
             id: mapPlugin

@@ -1,15 +1,9 @@
-set(MODULE_NAME content)
-set(LIB_NAME ${MODULE_NAME}Lib)
 
-qt_add_library(${LIB_NAME} STATIC)
+#find_package(Qt6 REQUIRED COMPONENTS Location Positioning)
 
-set_target_properties(${LIB_NAME} PROPERTIES AUTOMOC ON)
-target_link_libraries(${LIB_NAME} PRIVATE Qt6::Quick)
-
-qt6_add_qml_module(${LIB_NAME}
-    URI ${MODULE_NAME}
+qt6_add_qml_module(content
+    URI "content"
     VERSION 1.0
-    RESOURCE_PREFIX "/"
     QML_FILES
         MainScreen.ui.qml
 
@@ -77,3 +71,8 @@ qt6_add_qml_module(${LIB_NAME}
         images/icons/Location.png
         images/icons/search.png
 )
+
+#target_link_libraries(qml_location_places PRIVATE
+#    Qt6::Location
+#    Qt6::Positioning
+#)

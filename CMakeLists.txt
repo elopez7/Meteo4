@@ -1,10 +1,12 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.23)
 
 project(Meteo4 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(QT_WASM_INITIAL_MEMORY 53084160)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core Quick QuickControls2 Positioning Location)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Quick QuickControls2)
+qt_policy(SET QTP0001 NEW)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -33,7 +35,7 @@ set_target_properties(appMeteo4 PROPERTIES
 )
 
 target_link_libraries(appMeteo4
-    PRIVATE Qt6::Quick Qt6::QuickControls2 contentLibplugin
+    PRIVATE Qt6::Quick Qt6::QuickControls2 Qt6::Location Qt6::Positioning
 )
 
 include(GNUInstallDirs)
